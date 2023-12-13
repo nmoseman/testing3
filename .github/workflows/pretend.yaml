@@ -27,6 +27,7 @@ concurrency: production
 jobs:
   get_latest_release:
     runs-on: ubuntu-latest
+    environment: testing
     steps:
     - name: curl the release tags
       id: get_latest_tag
